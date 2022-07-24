@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.body_content{
+    padding-left:16.5% ;
+}
+
+#brand {
+    background-color: rgb(166, 40, 166);
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    height: 90px;
+    margin: 0;
+    padding: 0;
+}
+
+/*.logo_content{
+    line-height: 20px;
+    background:#c45eff;
+    width: 100%;
+    height: 5%;
+}*/
+
+header{
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 23px;
+    line-height: 35px;
+    background:#c45eff;
+    user-select: none;
+    display: flex;
+}
+
+nav img {
+    height: 33px;
+    width: 30px;
+}
+
+
+nav{
+    height: 100%;
+    width: 240px;
+    position: fixed;
+    left: 0;
+    overflow-x: hidden;
+    background-color: blueviolet;
+}
+
+nav ul li{
+    line-height: 3em;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+    font-size: 19px;
+   
+}
+
+nav ul li a{
+    display: block;
+    padding-left: 2em;
+    color: white;
+    
+} 
+
+nav i{
+    color: white;
+}
+
+.logout li{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-size: 19px;
+    padding-top: 18dff em;
+}
+
+.logout a{
+    color: white;
+    padding-left: 2em;
+    
+}
