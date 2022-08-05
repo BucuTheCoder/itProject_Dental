@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Cruz Dental Clinic</title>
+        <link rel="stylesheet"href="CSS/Style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    </head>
+
+   
+<body>
+
+    <div class="container">
+        <div class="logo">
+            <a href="#"><img src="Images/logo.png" alt="logo"></a>
+        </div>
+    <div class="navbar">
+    
+    <div class="icon-bar" onclick="Show()">
+        <i></i>
+        <i></i>
+        <i></i>
+    </div>
+    
+    <ul id="nav-lists">
+        <li class="close"><span onclick="Hide()">×</span></li>
+        <li> <a href="Landingpage.html">Home</a></li>
+        <li> <a href="About.html">About</a></li>
+        <li> <a href="Service.html">Services</a></li>
+        <li> <a href="Contact.html">Contact</a></li>
+        
+        
+    </ul>
+    
+    </div>
+    </div>
+    <div class="body">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum autem repudiandae blanditiis odit voluptate sapiente ab laborum aut dolore quam ipsam reiciendis illo, iure quia, minus eum eligendi laboriosam recusandae!</p>
+    </div>
+    
+    <script>
+    var navList = document.getElementById("nav-lists");
+    function Show() {
+    navList.classList.add("_Menus-show");
+    }
+    
+    function Hide(){
+    navList.classList.remove("_Menus-show");
+    }
+    </script>
+    
+    </body>
+        </html>
