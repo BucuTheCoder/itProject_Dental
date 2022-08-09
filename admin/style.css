@@ -49,6 +49,15 @@ nav img {
     width: 30px;
 }
 
+#icon_announce img{
+    height: 50%;
+    width: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
 
 nav{
     height: 100%;
@@ -72,6 +81,7 @@ nav ul li a{
     display: block;
     padding-left: 2em;
     color: white;
+    text-decoration: none;
     
 } 
 
@@ -84,11 +94,43 @@ nav i{
     text-decoration: none;
     color: white;
     font-size: 19px;
-    padding-top: 18dff em;
+    padding-top: 18em;
 }
 
 .logout a{
     color: white;
     padding-left: 2em;
+    text-decoration: none;
     
 }
+
+/*TEXT FORMAT*/
+
+h1{
+    padding-left: 0.3em;
+}
+
+p{
+    font-size: 100px;
+}
+
+/* MAIN CONTENT*/
+
+.flex-container {
+    display: flex;
+    margin: auto;
+    width: 85%;
+}
+
+.flex-child {
+    flex: 1;
+    border: 2px solid black;
+    background-color: #8d1ecd;
+    height: 250px;
+    color: white;
+    text-align: center;
+}  
+
+.flex-child:first-child {
+    margin-right: 20px;
+} 
