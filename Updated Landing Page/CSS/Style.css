@@ -1,0 +1,127 @@
+body
+{
+	background-size: cover;
+	background-repeat: no-repeat;
+  width: 100%;
+  height: auto;
+}
+  /*html Navbar page*/ 
+  .navbar{
+    background-color: #A14FD3 !important;
+  }
+   /*end*/ 
+  
+
+ /*html landing  page*/ 
+ .container {
+  position: relative;
+  text-align: center;
+  color: white;
+  font-family: 'Poppins';
+  font-size: 70px;
+  bottom: -10px;
+}
+
+.bottomleft {
+  position: absolute;
+  bottom: -150px;
+  left: 3px;
+  font-size: 90px;
+  font-weight:bold;
+  color: #D7A4FF;
+}
+.bottomleft1 {
+  position: absolute;
+  bottom: -250px;
+  left: 3px;
+  font-size: 90px;
+  font-weight:bold;
+  color: #D7A4FF;
+}
+.btn-float-left{
+  position: absolute;
+  bottom: -350px;
+  left: 103px;
+  background-color: #5F46A6;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  cursor: pointer;
+  border-radius: 25px;
+  }
+
+  .icon {
+   width: 4px;
+   height: 30px;
+   float: right;
+   width: 50%;
+   padding: 55px;
+  }
+
+   /*end*/  
+
+
+
+
+
+ /*html Services page*/ 
+ .centered1 {
+    position: relative;
+    text-align: center;
+    color: black;
+    font-family: 'Poppins';
+    font-size: 20px;
+    bottom: -10px;
+
+  }
+  .centered2 {
+    position: relative;
+    text-align: center;
+    color: black;
+    font-family: 'Poppins';
+    font-size: 20px;
+    bottom: -30px;
+
+  }
+  .centered3 {
+    position: relative;
+    text-align: center;
+    color: black;
+    font-family: 'Poppins';
+    font-size: 22px;
+    bottom: -55px;
+
+  }
+   /*end*/ 
+   
+  .responsive {
+    width: 100%;
+    height: auto;
+  }
+
+   /*html Center logo*/ 
+  .context {
+    position: relative;
+    text-align: center;
+    color: black;
+    font-family: 'Poppins';
+    font-size: 70px;
+    bottom: -10px;
+  }
+
+
+
+   /*html Footer*/ 
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #EAEAEA;
+    color:black;
+    text-align: center;
+ }
