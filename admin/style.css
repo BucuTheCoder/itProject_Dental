@@ -1,19 +1,23 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
 
-body{
+body {
     position: relative;
     min-height: 100vh;
     width: 100%;
     overflow: hidden;
 }
 
-.body_content{
-    padding-left:16.5% ;
+.body_content {
+    padding-left: 18%;
+}
+
+.h1-title {
+    padding-left: 1px;
 }
 
 #brand {
@@ -26,6 +30,7 @@ body{
     padding: 0;
 }
 
+
 /*.logo_content{
     line-height: 20px;
     background:#c45eff;
@@ -33,13 +38,13 @@ body{
     height: 5%;
 }*/
 
-header{
+header {
     color: white;
     text-align: center;
     font-weight: bold;
     font-size: 23px;
     line-height: 35px;
-    background:#c45eff;
+    background: #c45eff;
     user-select: none;
     display: flex;
 }
@@ -49,17 +54,15 @@ nav img {
     width: 30px;
 }
 
-#icon_announce img{
+#icon_announce img {
     height: 50%;
     width: 30%;
     display: block;
     margin-left: auto;
     margin-right: auto;
-
 }
 
-
-nav{
+nav {
     height: 100%;
     width: 240px;
     position: fixed;
@@ -68,28 +71,26 @@ nav{
     background-color: blueviolet;
 }
 
-nav ul li{
+nav ul li {
     line-height: 3em;
     width: 100%;
     text-decoration: none;
     color: white;
     font-size: 19px;
-   
 }
 
-nav ul li a{
+nav ul li a {
     display: block;
     padding-left: 2em;
     color: white;
     text-decoration: none;
-    
-} 
+}
 
-nav i{
+nav i {
     color: white;
 }
 
-.logout li{
+.logout li {
     display: inline-block;
     text-decoration: none;
     color: white;
@@ -97,24 +98,23 @@ nav i{
     padding-top: 18em;
 }
 
-.logout a{
+.logout a {
     color: white;
     padding-left: 2em;
     text-decoration: none;
-    
 }
+
 
 /*TEXT FORMAT*/
 
-h1{
+h1 {
     padding-left: 0.3em;
 }
 
-p{
-
-    font-size: 150px;
-    padding-top: 0.1em;
+p {
+    font-size: 100px;
 }
+
 
 /* MAIN CONTENT*/
 
@@ -131,8 +131,108 @@ p{
     height: 250px;
     color: white;
     text-align: center;
-}  
+}
 
 .flex-child:first-child {
     margin-right: 20px;
-} 
+}
+
+.sidebar {
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    left: 0;
+    background: #1b1b1b;
+}
+
+.sidebar .text {
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 65px;
+    text-align: center;
+    background: #ca24eb;
+    letter-spacing: 1px;
+}
+
+nav ul {
+    background-color: rgb(138, 43, 226);
+    height: 100%;
+    width: 100%;
+    list-style: none;
+}
+
+nav ul li {
+    line-height: 60px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+nav ul li:last-child {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+nav ul li a {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding-left: 40px;
+    font-weight: 500;
+    display: block;
+    width: 100%;
+    border-left: 3px solid transparent;
+}
+
+nav ul li.active a {
+    color: rgb(244, 244, 244);
+    background: rgb(107, 15, 193);
+    border-left-color: rgb(255, 255, 255);
+}
+
+nav ul ul {
+    position: static;
+    display: none;
+}
+
+nav ul .sched-show.show {
+    display: block;
+}
+
+nav ul .acct-show.show1 {
+    display: block;
+}
+
+nav ul ul li {
+    line-height: 42px;
+    border-bottom: none;
+}
+
+nav ul ul li a {
+    font-size: 17px;
+    color: #e6e6e6;
+    padding-left: 80px;
+}
+
+nav ul li.active ul li a {
+    color: #e6e6e6;
+    background: rgb(107, 15, 193);
+    border-left-color: transparent;
+}
+
+nav ul ul li a:hover {
+    color: rgb(47, 0, 255)!important;
+    background: rgb(107, 15, 193)!important;
+}
+
+nav ul li a span {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 22px;
+    transition: transform 0.4s;
+}
+
+nav ul li a span.rotate {
+    transform: translateY(-50%) rotate(-180deg);
+}

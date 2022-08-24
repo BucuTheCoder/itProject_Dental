@@ -1,75 +1,121 @@
-<html>
-    <head>
-        <title>Dra Marites Cruz Dental Clinic Website</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="css/all.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <meta charset="UTF-8">
-		<meta name="description" content= "Admin Dental Clinic Web Page">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+<!DOCTYPE html>
+<html lang=e n dir="ltr">
 
-    </head>
-    
-    <body>
-        <nav>
-            
-            <header>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="description" content="Admin Dental Clinic Web Page">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>Dra Marites Cruz Dental Clinic Website</title>
+
+</head>
+
+<body>
+    <nav class="sidebar">
+
+        <header>
             <div class="logo"> <img src="logo dental.png" alt="dental logo"></div>
             Cruz Dental Clinic
-            </header>
-               
-   
-                <ul>
-                    <li><a href="index.html"> <i class="fa-solid fa-house"></i> Dashboard </a></li>
-                    <li><a href="#news"> <i class="fa-solid fa-calendar-days"></i> Schedule </a></li>
-                    <li><a href="#contact"> <i class="fa-solid fa-user-group"></i> Accounts </a></li>
-                    <li><a href="#about"> <i class="fa-solid fa-money-bill-wave"></i> Billing </a></li>
-                    <li><a href="#announcements"><i class="fa-solid fa-bullhorn"></i> Announcements </a></li>
-                   
+        </header>
+
+
+        <ul>
+
+            <li>
+                <a href="index.html">
+                    <i class="fa-solid fa-house"></i> Dashboard
+                </a>
+            </li>
+
+            <li>
+                <a href="#" class="sched-btn">
+                    <i class="fa-solid fa-calendar-days"></i> Schedule
+                    <span class="fas fa-caret-down first"></span>
+                </a>
+                <ul class="sched-show">
+                    <li><a href="#">Calendar</a></li>
+                    <li><a href="#">Schedule List</a></li>
                 </ul>
+            </li>
 
-            <div class="logout">
-                <li><a href="#logout"> <i class="fa-solid fa-right-from-bracket"></i> Logout </a></li>
-            </div>
-            
-        </nav>
+            <li>
+                <a href="#" class="acct-btn">
+                    <i class="fa-solid fa-user-group"></i> Accounts
+                    <span class="fas fa-caret-down second"></span>
+                </a>
+                <ul class="acct-show">
+                    <li><a href="#">Dentist</a></li>
+                    <li><a href="#">Patients</a></li>
+                    <li><a href="#">Administrator</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#about"> <i class="fa-solid fa-money-bill-wave"></i> Billing </a>
+            </li>
+            <li><a href="#announcements"><i class="fa-solid fa-bullhorn"></i> Announcements </a></li>
+        </ul>
 
-        <div class="body_content">
-            <h1>Dashboard</h1>
-            <br/>
-            <h2> Appointment Summmary</h2>
-            
-            <!--BOX CONTAINET FOR TOTAL APPOINTMENTS AND CANCEL APPOINTMENTS-->
-            <div class="flex-container">
-
-                <div class="flex-child magenta">
-                  <p id="title">Total Appointments</p>
-                  <br/>
-                    <!--Total Appointments Number-->
-                    <p>0</p>
-
-                </div>
-                
-                <div class="flex-child green">
-                <p id="title">Total Cancel Appointments</p>
-                  <br/>
-                  <!--Total Cancel Appointments NUMBER-->
-                  <p>0</p>
-                </div>
-                
-            </div>
-
-            <h2>Announcements List</h2>
-
-            <div id="icon_announce">
-                <img src="announcement.png" alt="announcement">
-            </div>
-              
-            
+        <div class="logout">
+            <li>
+                <a href="#logout"> <i class="fa-solid fa-right-from-bracket"></i> Logout </a>
+            </li>
         </div>
-    </body>
 
-    <footer>
-    </footer>
+    </nav>
 
-</html> 
+
+    <div class="body_content">
+        <h1 class="h1-title">Dashboard</h1>
+        <br/>
+        <h2> Appointment Summmary</h2>
+
+        <div class="flex-container">
+
+            <div class="flex-child magenta">
+                Total Appointments
+                <br/>
+                <p>0</p>
+
+            </div>
+
+            <div class="flex-child green">
+                Total Cancel Appointments
+                <br/>
+                <p>0</p>
+            </div>
+
+        </div>
+
+        <h2>Announcements List</h2>
+
+        <div id="icon_announce">
+            <img src="announcement.png" alt="announcement">
+        </div>
+
+    </div>
+
+
+
+
+
+    <script>
+        $('.sched-btn').click(function() {
+            $('nav ul .sched-show').toggleClass("show");
+            $('nav ul .first').toggleClass("rotate");
+        });
+        $('.acct-btn').click(function() {
+            $('nav ul .acct-show').toggleClass("show1");
+            $('nav ul .second').toggleClass("rotate");
+        });
+        $('nav ul li').click(function() {
+            $(this).addClass("active").siblings().removeClass("active");
+        });
+    </script>>
+
+</body>
+
+</html>
