@@ -10,7 +10,24 @@ body
     background-color: #A14FD3 !important;
   }
    /*end*/ 
-  
+
+
+  /*Logo positioning*/ 
+.logo img{
+    position: static;
+    margin-left: 10px;
+    width: 8%;
+}
+
+  /*Font positioning beside logo*/ 
+.text {
+    position: fixed;
+    left: 130px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+
 
  /*html landing  page*/ 
  .container {
