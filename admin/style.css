@@ -13,7 +13,7 @@ body {
 }
 
 .body_content {
-    padding-left: 18%;
+    padding-left: 16.5%;
 }
 
 .h1-title {
@@ -67,7 +67,7 @@ nav {
     width: 240px;
     position: fixed;
     left: 0;
-    overflow-x: hidden;
+    overflow-y: hidden;
     background-color: blueviolet;
 }
 
@@ -94,8 +94,8 @@ nav i {
     display: inline-block;
     text-decoration: none;
     color: white;
+    padding-top: 16em;
     font-size: 19px;
-    padding-top: 18em;
 }
 
 .logout a {
@@ -107,20 +107,27 @@ nav i {
 
 /*TEXT FORMAT*/
 
-h1 {
+h1{
     padding-left: 0.3em;
 }
 
-p {
-    font-size: 100px;
+#title{
+    font-size: 23px;
 }
 
+p{
+
+    font-size: 150px;
+    padding-top: 0.01em;
+}
 
 /* MAIN CONTENT*/
+
 
 .flex-container {
     display: flex;
     margin: auto;
+    padding-top: 0.3em;
     width: 85%;
 }
 
@@ -131,36 +138,12 @@ p {
     height: 250px;
     color: white;
     text-align: center;
-}
+}  
 
 .flex-child:first-child {
     margin-right: 20px;
-}
+} 
 
-.sidebar {
-    position: fixed;
-    width: 250px;
-    height: 100%;
-    left: 0;
-    background: #1b1b1b;
-}
-
-.sidebar .text {
-    color: white;
-    font-size: 25px;
-    font-weight: 600;
-    line-height: 65px;
-    text-align: center;
-    background: #ca24eb;
-    letter-spacing: 1px;
-}
-
-nav ul {
-    background-color: rgb(138, 43, 226);
-    height: 100%;
-    width: 100%;
-    list-style: none;
-}
 
 nav ul li {
     line-height: 60px;
