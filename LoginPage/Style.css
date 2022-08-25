@@ -60,6 +60,26 @@ form{
     }
   }
   
+
+  /*Logo positioning*/ 
+.logo img{
+    position: fixed;
+    margin-right: 500px;
+    width: 5%;
+    top: 1.5%;
+    right: -30%;
+}
+
+  /*Font positioning beside logo*/ 
+.text {
+    position: fixed;
+    top:35px;
+    right: 130px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+
   .topnav {
     overflow: hidden;
     background-color:#A14FD3;
