@@ -32,9 +32,20 @@ input[type="radio"]{
 visibility:hidden;
 }
 
+input[type="submit"]{
+  font-size: 30px;
+  border-radius: 30px;
+  color: green;
+}
+
 label:hover{
   background-color:violet;
   font-size: 22px;
+}
+
+label:active{
+  background-color: green;
+  font-weight: bold;
 }
 
 #datepicker{
